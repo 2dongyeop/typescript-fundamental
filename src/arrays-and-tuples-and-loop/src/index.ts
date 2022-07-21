@@ -20,3 +20,7 @@ for (const property in person) {
     // @ts-ignore
     console.log(`-> ${person[property]}`);
 }
+
+for (const person of people) {
+    person.printInfo();
+}
