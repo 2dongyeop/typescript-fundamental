@@ -4,7 +4,7 @@
   "description": "타입스크립트 기초 문법을 공부한 내용을 기록합니다.",
   "main": "src/functions-and-methods/src/index.ts",
   "scripts": {
-    "dev": "ts-node src",
+    "dev": "ts-node src/functions-and-methods/src/index.ts",
     "build": "tsc && node dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
