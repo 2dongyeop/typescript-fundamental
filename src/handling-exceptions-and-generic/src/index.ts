@@ -5,6 +5,9 @@ import {parseNumber} from "./parse-number";
 import {mergeObjects} from "./merge-objects";
 import {ICircle, IRectangle, ISquare} from "./shape";
 import {calculatorArea} from "./calculator-area";
+import Bird from "./bird";
+import Fish from "./fish";
+import {flyOrSwim} from "./fly-or-swim";
 
 try {
     occurErrorMethod();
@@ -41,3 +44,8 @@ console.log(
     calculatorArea(rectangle),
     calculatorArea(circle)
 );
+
+const bird: Bird = new Bird();
+const fish: Fish = new Fish();
+flyOrSwim(bird);
+flyOrSwim(fish);
