@@ -31,7 +31,7 @@ class MakePersonData {
         return this._name;
     }
     // 아래와 같이 setter는 당연히 readonly가 없어야 함
-    // public set name(name: string): void {
+    // public set name(name: string) {
     //     this._name = _ame;
     // }
 }
