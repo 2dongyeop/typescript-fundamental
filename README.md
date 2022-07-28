@@ -20,3 +20,6 @@
 - [handling-exception and generic](https://leedongyeop.notion.site/handling-exception-and-generic-483a1b690d874bd6b18dcd704f61b480)
     - 타입스크립트에서의 예외처리와 제네릭에 대해 학습합니다.
     - 대수 데이터 타입, 식별 합집합 그리고 타입 가드에 대해 학습합니다.
+- [synchronous and blocking](https://leedongyeop.notion.site/Synchronous-and-Blocking-8f6c3b027a9049f4abe7ffd67f943d1b)
+    - 동기와 비동기, 블로킹과 논블로킹 방식에 대해 학습합니다.
+    - 콜백 지옥과 Promise 클래스, 그리고 async-await 구문을 공부합니다.
