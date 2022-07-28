@@ -36,7 +36,8 @@ class MakePersonData {
     }
 }
 
-export const makePerson: (personData: MakePersonData) => Person = (personData: Readonly<MakePersonData>): Person => {
+// 아래 (personData: MakePersonData) => Person 을 MakePerson을 바꿔도 작동 됨
+export const makePerson: (personData: MakePersonData) => Person = (personData: MakePersonData): Person => {
     console.log(personData.name); //_name으로 선언을 해놓았지만 getter 메소드를 통해 호출 가능
 
     return new Person(personData.name, personData.age, personData.etc);
