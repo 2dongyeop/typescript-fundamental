@@ -17,3 +17,6 @@
 - [arrays, tuples and loop](https://leedongyeop.notion.site/arrays-tuples-and-loop-e337998b9a1a4cf8a804ca1e146ff58e)
     - 타입스크립트에서 배열을 다루는 것과 반복문, 그리고 튜플에 대해 학습합니다.
     - 타입 수정자(readonly)와 복사(깊은 복사, 얕은 복사)에 대해 학습합니다.
+- [handling-exception and generic](https://leedongyeop.notion.site/handling-exception-and-generic-483a1b690d874bd6b18dcd704f61b480)
+    - 타입스크립트에서의 예외처리와 제네릭에 대해 학습합니다.
+    - 대수 데이터 타입, 식별 합집합 그리고 타입 가드에 대해 학습합니다.
