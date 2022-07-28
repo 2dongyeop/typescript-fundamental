@@ -31,12 +31,12 @@ class MakePersonData {
         return this._name;
     }
     // 아래와 같이 setter는 당연히 readonly가 없어야 함
-    // public set name(name: string) {
-    //     this._name = _ame;
-    // }
+    public set name(name: string) {
+        this._name = name;
+    }
 }
 
-export const makePerson: (personData: Readonly<MakePersonData>) => Person = (personData: Readonly<MakePersonData>): Person => {
+export const makePerson: (personData: MakePersonData) => Person = (personData: Readonly<MakePersonData>): Person => {
     console.log(personData.name); //_name으로 선언을 해놓았지만 getter 메소드를 통해 호출 가능
 
     return new Person(personData.name, personData.age, personData.etc);
