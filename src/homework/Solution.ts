@@ -4,7 +4,7 @@ function solution(numbers) {
     const stringNumbers: string[] = new String[numbers.length];
 
     for (const index in numbers) {
-        stringNumbers[index] = numbers[index].toString();
+        stringNumbers.push(numbers);
     }
 
     stringNumbers.sort();
