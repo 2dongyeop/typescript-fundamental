@@ -1,22 +1,9 @@
 function solution(numbers) {
-    let answer = ''; //아래에서 바뀌므로 let으로 선언
+    const answer: string[] = numbers.map(String)
+        .sort((a, b) => (b + a) - (a + b))
+        .join('')
 
-    const stringNumbers: string[] = new String[numbers.length];
-
-    for (const index in numbers) {
-        stringNumbers.push(numbers);
-    }
-
-    stringNumbers.sort();
-
-
-    for (const str in stringNumbers) {
-        answer += str;
-    }
-
-    if (stringNumbers[0] == "0") {
-        return "0";
-    }
-
-    return answer;
+    //큰 순서대로 정렬했는데 가장 앞에가 0일 경우
+    //주어진 numbers가 [0, 0, 0, ...]이므로 000..이 아닌 0을 출력
+    return answer[0] === '0' ? '0' : answer
 }
